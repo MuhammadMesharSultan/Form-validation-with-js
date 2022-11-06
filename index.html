@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation with Javascript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="form">
+        <h1>FORM WITH JS VALIDATION</h1>
+        <div class="mid">
+            <div class="fields">
+                <label for="fname" id="f">First Name:</label>
+                <br>
+                <input type="text" name="" id="fname" onblur="getvalues()">
+                <br>
+                <label for="lname" id="l">Last Name:</label>
+                <br>
+                <input type="text" name="" id="lname" onblur="getvalues()">
+                <br>
+                <label for="email" id="e">Email Address:</label>
+                <br>
+                <input type="text" name="" id="email" onblur="getvalues()">
+                <br>
+                <label for="cno" id="c">Contact No:</label>
+                <br>
+                <input type="text" name="" id="cno"  onchange ="phonenumber(this)" onblur="getvalues()">
+                <br>
+                <label for="pass" id="p">Password:</label>
+                <br>
+                <input type="password" name="" id="pass" onblur="getvalues()">
+                <br>
+                <label for="cpass" id="cp">Confirm Password:</label>
+                <br>
+                <input type="password" name="" id="cpass" onblur="getvalues()">
+                <br>
+                
+                <button onclick="submit()" >Register</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+
+</html>
